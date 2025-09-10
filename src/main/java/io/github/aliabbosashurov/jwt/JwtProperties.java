@@ -8,13 +8,19 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import java.time.Duration;
 
 /**
+ * Configuration properties for JSON Web Token.
+ *
  * @author Aliabbos Ashurov
- * @since 2025-09-04
  */
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "app.security.jwt")
 public class JwtProperties {
+
+    /**
+     * Whether JWT support is enabled in the application.
+     */
+    private @NonNull Boolean enabled = true;
 
     /**
      * Secret key for signing and verifying JWTs.
