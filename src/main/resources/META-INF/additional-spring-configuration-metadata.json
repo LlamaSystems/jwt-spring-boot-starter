@@ -3,6 +3,7 @@
     {
       "name": "app.security.jwt",
       "type": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "description": "Configuration properties for JSON Web Token.",
       "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties"
     }
   ],
@@ -58,6 +59,19 @@
   ],
   "hints": [
     {
+      "name": "app.security.jwt.enabled",
+      "values": [
+        {
+          "value": true,
+          "description": "Enabled."
+        },
+        {
+          "value": false,
+          "description": "Disabled."
+        }
+      ]
+    },
+    {
       "name": "app.security.jwt.expiration",
       "values": [
         {
@@ -79,18 +93,6 @@
         {
           "value": "24h",
           "description": "1 day."
-        },
-        {
-          "value": "7d",
-          "description": "7 days."
-        },
-        {
-          "value": "14d",
-          "description": "14 days."
-        },
-        {
-          "value": "30d",
-          "description": "30 days."
         }
       ]
     },
@@ -129,14 +131,6 @@
         {
           "value": "7d",
           "description": "7 days."
-        },
-        {
-          "value": "14d",
-          "description": "14 days."
-        },
-        {
-          "value": "30d",
-          "description": "30 days."
         }
       ]
     },
