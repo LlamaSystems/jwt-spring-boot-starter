@@ -6,10 +6,10 @@
 
     <groupId>io.github.aliabbosashurov</groupId>
     <artifactId>jwt-spring-boot-starter</artifactId>
-    <version>1.0.1</version>
+    <version>1.5.1</version>
     <packaging>jar</packaging>
 
-    <name>JWT Properties Library</name>
+    <name>JWT Spring Boot Starter</name>
     <description>A lightweight library providing JWT properties configuration for Spring projects.</description>
     <url>https://github.com/aliabbosashurov/jwt-spring-boot-starter</url>
 
@@ -35,10 +35,10 @@
     </scm>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
         <spring-boot.version>3.5.5</spring-boot.version>
         <jspecify.version>1.0.0</jspecify.version>
-        <lombok.version>1.18.34</lombok.version>
+        <lombok.version>1.18.40</lombok.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -109,6 +109,9 @@
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <Automatic-Module-Name>io.github.aliabbosashurov.jwt</Automatic-Module-Name>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
@@ -147,7 +150,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.2.7</version>
+                <version>3.2.8</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
