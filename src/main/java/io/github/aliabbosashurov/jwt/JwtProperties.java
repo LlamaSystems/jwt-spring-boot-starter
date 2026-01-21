@@ -1,40 +1,45 @@
 package io.github.aliabbosashurov.jwt;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.time.Duration;
 
 /// Configuration properties for JSON Web Token.
 ///
 /// @author Aliabbos Ashurov
-@Getter
-@Setter
 @ConfigurationProperties(prefix = "app.security.jwt")
-public class JwtProperties {
+public record JwtProperties(
 
-    /// Whether JWT support is enabled in the application.
-    private Boolean enabled = true;
+        // Whether JWT support is enabled.
+        @DefaultValue("true")
+        boolean enabled,
 
-    /// Secret key for signing and verifying JWTs.
-    private String secretKey;
+        // Secret key for signing and verifying JWTs.
+        String secretKey,
 
-    /// Duration after which the JWT expires.
-    private Duration expiration = Duration.ofMinutes(60);
+        // JWT expiration duration.
+        @DefaultValue("60m")
+        Duration expiration,
 
-    /// Duration after which the refresh token expires.
-    private Duration refreshTokenExpiration = Duration.ofDays(7);
+        // Refresh token expiration duration.
+        @DefaultValue("7d")
+        Duration refreshTokenExpiration,
 
-    /// Prefix for the JWT in the HTTP Authorization header.
-    private String tokenPrefix = "Bearer";
+        // Authorization header token prefix.
+        @DefaultValue("Bearer")
+        String tokenPrefix,
 
-    /// HTTP header name for transmitting the JWT.
-    private String header = "Authorization";
+        //  HTTP header name.
+        @DefaultValue("Authorization")
+        String header,
 
-    /// Issuer claim for the JWT.
-    private String issuer = "default-issuer";
+        // JWT issuer.
+        @DefaultValue("default-issuer")
+        String issuer,
 
-    /// Audience claim for the JWT.
-    private String audience = "all";
+        //  JWT audience.
+        @DefaultValue("all")
+        String audience
+) {
 }
