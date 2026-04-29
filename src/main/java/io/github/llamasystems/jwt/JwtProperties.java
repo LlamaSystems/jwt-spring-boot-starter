@@ -1,4 +1,4 @@
-package io.github.aliabbosashurov.jwt;
+package io.github.llamasystems.jwt;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.bind.DefaultValue;

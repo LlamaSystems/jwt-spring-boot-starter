@@ -14,6 +14,6 @@
 /// All classes in this package are [`@NonNull`](https://jspecify.dev)
 /// by default, due to {@link org.jspecify.annotations.NullMarked}.
 @NullMarked
-package io.github.aliabbosashurov.jwt.autoconfigure;
+package io.github.llamasystems.jwt.autoconfigure;
 
 import org.jspecify.annotations.NullMarked;

@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.aliabbosashurov</groupId>
+    <groupId>io.github.llamasystems</groupId>
     <artifactId>jwt-spring-boot-starter</artifactId>
     <version>2.0.0</version>
     <packaging>jar</packaging>
 
     <name>JWT Spring Boot Starter</name>
     <description>A lightweight library providing JWT properties configuration for Spring projects.</description>
-    <url>https://github.com/aliabbosashurov/jwt-spring-boot-starter</url>
+    <url>https://github.com/llamasystems/jwt-spring-boot-starter</url>
 
     <licenses>
         <license>
@@ -29,14 +29,14 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/aliabbosashurov/jwt-spring-boot-starter.git</connection>
-        <developerConnection>scm:git:ssh://github.com/aliabbosashurov/jwt-spring-boot-starter.git</developerConnection>
-        <url>https://github.com/aliabbosashurov/jwt-spring-boot-starter</url>
+        <connection>scm:git:git://github.com/llamasystems/jwt-spring-boot-starter.git</connection>
+        <developerConnection>scm:git:ssh://github.com/llamasystems/jwt-spring-boot-starter.git</developerConnection>
+        <url>https://github.com/llamasystems/jwt-spring-boot-starter</url>
     </scm>
 
     <properties>
         <java.version>25</java.version>
-        <spring-boot.version>4.0.1</spring-boot.version>
+        <spring-boot.version>4.0.6</spring-boot.version>
         <jspecify.version>1.0.0</jspecify.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -69,7 +69,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.15.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -90,14 +90,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.4.2</version>
+                <version>3.5.0</version>
                 <configuration>
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
-                            <Automatic-Module-Name>io.github.aliabbosashurov.jwt</Automatic-Module-Name>
+                            <Automatic-Module-Name>io.github.llamasystems.jwt</Automatic-Module-Name>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -107,7 +107,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.4.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -122,7 +122,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.11.3</version>
+                <version>3.12.0</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -153,7 +153,7 @@
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.8.0</version>
+                <version>0.10.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>

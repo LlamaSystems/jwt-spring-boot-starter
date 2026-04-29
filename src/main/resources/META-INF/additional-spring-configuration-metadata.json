@@ -2,9 +2,9 @@
   "groups": [
     {
       "name": "app.security.jwt",
-      "type": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "type": "io.github.llamasystems.jwt.JwtProperties",
       "description": "Configuration properties for JSON Web Token.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties"
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties"
     }
   ],
   "properties": [
@@ -12,48 +12,48 @@
       "name": "app.security.jwt.audience",
       "type": "java.lang.String",
       "description": "Audience claim for the JWT.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "all"
     },
     {
       "name": "app.security.jwt.expiration",
       "type": "java.time.Duration",
       "description": "Duration after which the JWT expires.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "1h"
     },
     {
       "name": "app.security.jwt.header",
       "type": "java.lang.String",
       "description": "HTTP header name for transmitting the JWT.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "Authorization"
     },
     {
       "name": "app.security.jwt.issuer",
       "type": "java.lang.String",
       "description": "Issuer claim for the JWT.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "default-issuer"
     },
     {
       "name": "app.security.jwt.refresh-token-expiration",
       "type": "java.time.Duration",
       "description": "Duration after which the refresh token expires.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "7d"
     },
     {
       "name": "app.security.jwt.secret-key",
       "type": "java.lang.String",
       "description": "Secret key for signing and verifying JWTs.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties"
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties"
     },
     {
       "name": "app.security.jwt.token-prefix",
       "type": "java.lang.String",
       "description": "Prefix for the JWT in the HTTP Authorization header.",
-      "sourceType": "io.github.aliabbosashurov.jwt.JwtProperties",
+      "sourceType": "io.github.llamasystems.jwt.JwtProperties",
       "defaultValue": "Bearer"
     }
   ],
